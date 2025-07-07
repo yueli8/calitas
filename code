@@ -1,0 +1,6 @@
+conda install -c bioconda calitas
+(base) hp@HP-Workstation:~/nanjing01/calitas$ samtools faidx hg38.fa 
+(base) hp@HP-Workstation:~/nanjing01/calitas$ samtools dict -a GRCh38 -s Homo_sapiens -o hg38.dict hg38.fa
+(base) hp@HP-Workstation:~/nanjing01/calitas$ calitas SearchReference -i ccnAAAATCTGTGATCTTG  -I 20250702 -r hg38.fa -o 20250702.hits.txt --max-guide-diffs 5 --max-pam-mismatches 0  --max-gaps-between-guide-and-pam 3
+(base) hp@HP-Workstation:~/nanjing01/calitas$ calitas SearchReference -i ccnAGCAGTTTGGCCAGCC  -I 20250702 -r hg38.fa -o 20250702.hits.txt --max-guide-diffs 2 --max-pam-mismatches 0  --max-gaps-between-guide-and-pam 1
+
