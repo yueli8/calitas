@@ -8,3 +8,8 @@ conda install -c bioconda calitas
 (base) hp@HP-Workstation:~/nanjing01/calitas$ calitas SearchReference -i ccnAAAATCTGTGATCTTG  -I 20250702 -r hg38.fa -o 20250702.hits.txt --max-guide-diffs 5 --max-pam-mismatches 0  --max-gaps-between-guide-and-pam 3        20250702是文件名
 (base) hp@HP-Workstation:~/nanjing01/calitas$ calitas SearchReference -i ccnAGCAGTTTGGCCAGCC  -I 20250702 -r hg38.fa -o 20250702.hits.txt --max-guide-diffs 2 --max-pam-mismatches 0  --max-gaps-between-guide-and-pam 1           (better than line 7)
 #install Miniconda3-py38_23.11.0-2-Linux-x86_64.sh  in GLIBC system 2.17   
+[liyue@master miniconda3]$ source ~/.bashrc
+[liyue@master miniconda3]$ source ~/miniconda3/bin/activate
+(base) [liyue@master miniconda3]$ conda --version
+conda 23.11.0
+(base) [liyue@master miniconda3]$ conda info
